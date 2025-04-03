@@ -1,0 +1,35 @@
+[project]
+name = "nlp-stackoverflow-analysis"
+version = "0.1.0"
+description = "NLP Stack Overflow Posts Analysis"
+requires-python = ">=3.11"
+
+dependencies = [
+    "stackapi",
+    "pandas",
+    "nltk",
+    "spacy",
+    "scikit-learn",
+    "wordcloud",
+    "matplotlib",
+    "pyyaml",
+    "tqdm",
+    "sentence-transformers",
+    "loguru",
+    "python-dotenv",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-cov",
+    "black",
+    "isort",
+    "mypy",
+    "ruff",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "--cov=src --cov-report=term-missing"
