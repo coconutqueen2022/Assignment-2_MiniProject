@@ -8,7 +8,7 @@ __pycache__/
 *.egg-info
 *.py[oc]
 build/
-data
+data/raw/
 dist/
 docs
 logs
